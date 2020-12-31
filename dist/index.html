@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge" />
+    <title>Frog Central</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        type="text/css"
+        media="screen"
+        href="style.css" />
+
+    <style>
+        #nav-toggle:checked+#nav-menu {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body class="antialiased bg-gray-100">
+    <!-- Header (Nav Bar) -->
+    <header class="w-full sticky top-0 left-0 bg-gray-700">
+        <div class="container flex flex-row flex-wrap lg:flex-nowrap items-center justify-between mx-auto px-4">
+            <img src="assets/img/frog-3.jpg"
+                alt="Frog Central Logo"
+                class="w-16 h-16 my-4 text-white text-xs object-cover object-center rounded-full" />
+
+            <label for="nav-toggle"
+                class="cursor-pointer lg:hidden inline-block"><svg class="fill-current text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 20 20">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg></label>
+            <input class="hidden"
+                type="checkbox"
+                id="nav-toggle" />
+
+            <nav id="nav-menu"
+                class="hidden lg:inline-block flex-basis-1">
+                <ul class="flex flex-col lg:flex-row w-full items-stretch lg:justify-end">
+                    <li>
+                        <a href="/"
+                            class="text-white font-semibold transition hover:text-green-600 p-4 block">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about"
+                            class="text-white font-semibold transition hover:text-green-600 p-4 block">About
+                            Us</a>
+                    </li>
+                    <li>
+                        <a href="/directory"
+                            class="text-white font-semibold transition hover:text-green-600 p-4 block">All
+                            Frogs</a>
+                    </li>
+                    <li>
+                        <a href="/contact"
+                            class="text-white font-semibold transition hover:text-green-600 p-4 block">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mx-auto">
+        <!-- Hero -->
+        <div class="container bg-hero-landing-image bg-cover bg-center">
+            <div class="w-full h-full px-8 py-24 md:px-16 md:py-48 bg-gray-800 bg-opacity-50">
+                <h1 class="text-white text-2xl font-semibold">Frog Central</h1>
+                <h2 class="text-3xl font-serif block pt-2 text-green-600">The Best Frogs.</h2>
+                <button class="transition bg-green-500 hover:bg-green-600 text-white font-bold mt-12 py-2 px-4 rounded">
+                    See All Frogs
+                </button>
+            </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="container bg-hero-pattern">
+            <div class="flex flex-col md:flex-row items-center justify-center px-8 py-12">
+                <!-- Cards -->
+                <div class="flex flex-col items-stretch justify-center rounded-xl m-4 p-8 bg-gray-100 shadow-xl">
+                    <img src="assets/img/frog-3.jpg"
+                        alt="Image"
+                        class="w-full h-36 object-cover rounded-xl shadow-sm" />
+                    <h1 class="mt-8 text-gray-700 font-serif text-center text-lg font-semibold">
+                        Blue Frog
+                    </h1>
+
+                    <p class="mt-1 text-gray-500 text-center">
+                        Our fanciest froggy, now in blue!
+                    </p>
+
+                    <div class="flex flex-col items-center">
+                        <button
+                            class="shadow-lg rounded-md transition bg-green-500 hover:bg-green-600 text-white uppercase font-semibold mx-2 mt-8 px-4 py-2">
+                            See Frog
+                        </button>
+                    </div>
+                </div>
+                <div class="flex flex-col items-stretch justify-center rounded-xl m-4 p-8 bg-gray-100 shadow-xl">
+                    <img src="assets/img/frog-1.jpg"
+                        alt="Image"
+                        class="w-full h-36 object-cover rounded-xl shadow-sm" />
+                    <h1 class="mt-8 text-gray-700 font-serif text-center text-lg font-semibold">
+                        Green Frog
+                    </h1>
+
+                    <p class="mt-1 text-gray-500 text-center">
+                        Our friendliest froggy, in green!
+                    </p>
+
+                    <div class="flex flex-col items-center">
+                        <button
+                            class="shadow-lg rounded-md transition bg-green-500 hover:bg-green-600 text-white uppercase font-semibold mx-2 mt-8 px-4 py-2">
+                            See Frog
+                        </button>
+                    </div>
+                </div>
+                <div class="flex flex-col items-stretch justify-center rounded-xl m-4 p-8 bg-gray-100 shadow-xl">
+                    <img src="assets/img/frog-2.jpg"
+                        alt="Image"
+                        class="w-full h-36 object-cover rounded-xl shadow-sm" />
+                    <h1 class="mt-8 text-gray-700 font-serif text-center text-lg font-semibold">
+                        Angry Frog
+                    </h1>
+
+                    <p class="mt-1 text-gray-500 text-center">
+                        This frog is angry, but still nice.
+                    </p>
+
+                    <div class="flex flex-col items-center">
+                        <button
+                            class="shadow-lg rounded-md transition bg-green-500 hover:bg-green-600 text-white uppercase font-semibold mx-2 mt-8 px-4 py-2">
+                            See Frog
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="container bg-cover bg-center bg-hero-frog-image">
+            <div class="flex flex-col md:flex-row items-center justify-start px-2 py-2 md:px-8 md:py-24">
+                <div
+                    class="flex flex-col items-stretch justify-center max-w-xl bg-gray-100 shadow-xl rounded-xl px-4 py-8 md:px-8 m-4">
+                    <h2 class="text-3xl font-serif block pt-2 text-green-600">
+                        Sponsor a Frog
+                    </h2>
+                    <p class="mt-6">
+                        With our <b>Sponsor a Frog</b> program, you can donate to
+                        <span class="text-green-500 font-bold">Frog Central</span> while
+                        receiving a range of perks, including:
+                    </p>
+                    <ul class="mt-2 py-2 list-disc ml-4">
+                        <li class="my-1 pl-6 font-semibold text-gray-500">
+                            Free fridge magnet and pin badge
+                        </li>
+                        <li class="my-1 pl-6 font-semibold text-gray-500">
+                            Monthly
+                            <a href="amphibiupdates"
+                                class="text-green-500 hover:text-green-600">
+                                Frogdates
+                            </a>
+                        </li>
+                        <li class="my-1 pl-6 font-semibold text-gray-500">
+                            Regular photos and videos of your sponsored frog
+                        </li>
+                        <li class="my-1 pl-6 font-semibold text-gray-500">
+                            Vouchers for selected animal sanctuaries
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div
+            class="container px-4 py-8 md:px-12 bg-gray-700 flex flex-col items-center justify-center md:flex-row md:items-center md:justify-between">
+            <p class="text-sm text-gray-100 text-center md:text-left">
+                &copy;
+                <a href="https://samcross.digital/"
+                    class="text-green-500 hover:text-green-600">Sam Cross Digital</a>
+                2020. Licensed under the MIT Licence.
+                <a href="https://github.com/sam-cross/html-with-tailwind"
+                    class="text-green-500 hover:text-green-600">See&nbsp;this on&nbsp;GitHub</a>!
+            </p>
+            <p>
+                <small class="text-gray-300 text-center md:text-left">This isn't a real website, unfortunately.</small>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

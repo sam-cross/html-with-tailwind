@@ -1,0 +1,14 @@
+{
+    "dependencies": {
+        "tailwindcss": "^2.0.2",
+        "tailwindcss-cli": "^0.1.2"
+    },
+    "scripts": {
+        "css:build": "tailwindcss-cli build src/style.css -o dist/style.css",
+        "tailwindinit": "tailwindcss-cli init"
+    },
+    "name": "html-with-tailwind",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+}
